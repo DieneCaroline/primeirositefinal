@@ -7,17 +7,46 @@ body {
     font-family: Roboto, 'Open Sans', Arial, sans-serif;
 }
 
+header {
+    background-color: rgb(150, 26, 26);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+}
+
+#menu {
+    float: right;
+    margin-right: 5%;
+    position: absolute;
+    margin-top: 0px;
+    list-style: none;
+
+}
+li:hover{
+    background-color: red;
+}
+li {
+    float: right;
+    padding: 20px 20px 20px 20px;
+
+
+}
+
 #imagem_fundo {
     margin: 0;
     background: url("fotofundo.jpg");
     height: 100%;
     text-align: center;
+    background-size: cover
 }
 
 #titulo {
     color: white;
     padding-top: 30%;
-    font-size: 60;
+    font-size: 40px;
     border-top: 3px solid white;
     text-shadow: 2px 1px black;
     line-height: 0, 5;
@@ -35,9 +64,55 @@ body {
     color: black;
     border: 1px rgb(1, 37, 15) solid;
     padding: 10px 10px 10px 10px;
+    background-color: rgb(245, 185, 107);
+    font-size: 20px;
+    text-shadow: 2px 1px rgb(206, 200, 200);
 }
 
 #projeto {
     background-color: rgb(252, 218, 196);
     padding: 10px
 }
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+
+
+}
+
+.dois {
+    width: 40%;
+}
+
+section {
+    float: left;
+    padding: 20%;
+
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.centralizado {
+    text-align: center;
+}
+footer{
+    background-color: rgb(226, 198, 121);
+    font-size: 20px;
+    float: left;
+}
+@media all and (max-widht: 780px) {
+    #menu {visibility: hidden;}
+    .coluna, .dois {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none
+    }
+
+    }
+ 
